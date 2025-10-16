@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты — Cozy Bean</title>
+
+  <!-- ✅ Адаптив -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ✅ SEO -->
+  <meta name="description" content="Контакты кафе Cozy Bean — адрес, телефон, email, карта проезда и форма обратной связи.">
+
+  <!-- ✅ Оптимизация шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ Основные стили -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- ✅ JS с defer -->
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <div class="logo">☕ Cozy <strong>Bean</strong></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html" class="active">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contacts">
+      <div class="container">
+        <h1>Свяжитесь с нами</h1>
+        <p class="subtitle">Мы всегда рады новым гостям и вашим отзывам</p>
+
+        <div class="contacts__grid">
+          <div class="contacts__info">
+            <h3>Адрес</h3>
+            <p>Str. Exemplu 1, București</p>
+
+            <h3>Телефон</h3>
+            <p><a href="tel:+40700000000">+40 700 000 000</a></p>
+
+            <h3>Почта</h3>
+            <p><a href="mailto:hello@cozybean.example">hello@cozybean.example</a></p>
+
+            <h3>Часы работы</h3>
+            <p>Пн–Пт: 08:00–20:00<br>Сб–Вс: 09:00–18:00</p>
+          </div>
+
+          <!-- ✅ Ленивая загрузка карты и улучшение CLS -->
+          <div class="contacts__map">
+            <iframe
+              src="https://maps.google.com/maps?q=Bucharest&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title="Карта расположения Cozy Bean"
+              width="600" height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              decoding="async"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <h2>Напишите нам</h2>
+        <p>Оставьте сообщение — мы свяжемся с вами в ближайшее время.</p>
+
+        <!-- ✅ Добавлена базовая валидация -->
+        <form class="contact-form" action="mailto:hello@cozybean.example" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label>Имя<br>
+              <input type="text" name="name" required minlength="2" placeholder="Ваше имя">
+            </label>
+            <label>Email<br>
+              <input type="email" name="email" required placeholder="example@mail.com">
+            </label>
+          </div>
+          <label>Сообщение<br>
+            <textarea name="message" rows="6" required minlength="5" placeholder="Введите сообщение"></textarea>
+          </label>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class

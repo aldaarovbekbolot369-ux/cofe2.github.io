@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О нас — Cozy Bean</title>
+
+  <!-- Адаптив -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Короткое SEO-описание -->
+  <meta name="description" content="Кафе Cozy Bean — уютное место с отличным кофе и свежей выпечкой. Узнайте больше о нас и нашей команде.">
+
+  <!-- Шрифты быстро -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JS неблокирующе -->
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <div class="logo">☕ Cozy <strong>Bean</strong></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html" class="active">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="container about__wrap">
+        <div class="about__text">
+          <h1>О нашем кафе</h1>
+          <p>Cozy Bean — это место, где каждая чашка кофе готовится с заботой. Мы верим, что кофе — не просто напиток, а ритуал, который наполняет день теплом и вдохновением.</p>
+          <p>Мы используем свежие зёрна от местных обжарщиков, а выпечку готовим на собственной кухне. Заходите к нам на кофе с круассаном, встречу с друзьями или просто отдохнуть.</p>
+          <p><strong>Cozy Bean</strong> — уют, вкус и внимание к деталям.</p>
+        </div>
+
+        <!-- Большое фото: один WebP + JPG fallback -->
+        <picture>
+          <source srcset="assets/img/big.webp" type="image/webp">
+          <img
+            src="assets/img/big.jpg"
+            alt="Интерьер кафе Cozy Bean"
+            width="1200" height="800"
+            loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2>Наша команда</h2>
+        <div class="team__grid">
+          <div class="team__member">
+            <picture>
+              <source srcset="assets/img/team-1.webp" type="image/webp">
+              <img
+                src="assets/img/team-1.jpg"
+                alt="Бариста Алия"
+                width="600" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Алия</h3>
+            <p>Главный бариста. Экспериментирует с сортами и обсмажкой.</p>
+          </div>
+
+          <div class="team__member">
+            <picture>
+              <source srcset="assets/img/team-2.webp" type="image/webp">
+              <img
+                src="assets/img/team-2.jpg"
+                alt="Шеф-кондитер Марк"
+                width="600" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Марк</h3>
+            <p>Шеф-кондитер. Его круассаны и чизкейк — легенда района.</p>
+          </div>
+
+          <div class="team__member">
+            <picture>
+              <source srcset="assets/img/team-3.webp" type="image/webp">
+              <img
+                src="assets/img/team-3.jpg"
+                alt="Менеджер Лена"
+                width="600" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Лена</h3>
+            <p>Менеджер. Следит за уютом и сервисом для каждого гостя.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Cozy Bean — место, где кофе становится искусством.</p>
+    </div>
+  </footer>
+</body>
+</html>

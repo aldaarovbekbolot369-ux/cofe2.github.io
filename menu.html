@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню — Cozy Bean</title>
+
+  <!-- Адаптив -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Короткое описание -->
+  <meta name="description" content="Меню кафе Cozy Bean: спешелти кофе, матча, свежая выпечка и десерты.">
+
+  <!-- Шрифты быстро и без блокировок -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JS неблокирующе -->
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <div class="logo">☕ Cozy <strong>Bean</strong></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="menu.html" class="active">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="container">
+        <h1>Наше меню</h1>
+        <p class="subtitle">Попробуйте наш кофе и свежую выпечку</p>
+
+        <div class="menu-grid">
+          <!-- Капучино -->
+          <article class="menu-item">
+            <picture>
+              <source srcset="assets/img/cappuccino.webp" type="image/webp">
+              <img
+                src="assets/img/cappuccino.jpg"
+                alt="Капучино"
+                width="800" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Капучино</h3>
+            <p>Молочная пенка, эспрессо и уют в каждой чашке.</p>
+            <span class="price">18 RON</span>
+          </article>
+
+          <!-- Латте -->
+          <article class="menu-item">
+            <picture>
+              <source srcset="assets/img/latte.webp" type="image/webp">
+              <img
+                src="assets/img/latte.jpg"
+                alt="Латте"
+                width="800" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Латте</h3>
+            <p>Мягкий кофе с нежным вкусом и красивым рисунком.</p>
+            <span class="price">20 RON</span>
+          </article>
+
+          <!-- Американо -->
+          <article class="menu-item">
+            <picture>
+              <source srcset="assets/img/americano.webp" type="image/webp">
+              <img
+                src="assets/img/americano.jpg"
+                alt="Американо"
+                width="800" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Американо</h3>
+            <p>Классический выбор для ценителей крепкого вкуса.</p>
+            <span class="price">15 RON</span>
+          </article>
+
+          <!-- Круассан -->
+          <article class="menu-item">
+            <picture>
+              <source srcset="assets/img/cur.webp" type="image/webp">
+              <img
+                src="assets/img/cur.jpg"
+                alt="Круассан"
+                width="800" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Круассан</h3>
+            <p>Хрустящий и свежий, с маслом и любовью.</p>
+            <span class="price">10 RON</span>
+          </article>
+
+          <!-- Чизкейк -->
+          <article class="menu-item">
+            <picture>
+              <source srcset="assets/img/chiz.webp" type="image/webp">
+              <img
+                src="assets/img/chiz.jpg"
+                alt="Чизкейк Нью-Йорк"
+                width="800" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Чизкейк Нью-Йорк</h3>
+            <p>Нежный десерт с крем-сыром и ванилью.</p>
+            <span class="price">22 RON</span>
+          </article>
+
+          <!-- Матча латте -->
+          <article class="menu-item">
+            <picture>
+              <source srcset="assets/img/match.webp" type="image/webp">
+              <img
+                src="assets/img/match.jpeg"
+                alt="Матча латте"
+                width="800" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Матча латте</h3>
+            <p>Сбалансированный вкус японского зелёного чая.</p>
+            <span class="price">25 RON</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Cozy Bean — вкус начинается с атмосферы.</p>
+    </div>
+  </footer>
+</body>
+</html>
